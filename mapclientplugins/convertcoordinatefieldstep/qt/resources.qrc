@@ -1,0 +1,6 @@
+
+<RCC>
+  <qresource prefix="convertcoordinatefieldstep">
+    <file>images/fitting.png</file>
+  </qresource>
+</RCC>
