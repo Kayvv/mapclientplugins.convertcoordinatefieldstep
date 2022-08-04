@@ -1,3 +1,5 @@
+import webbrowser
+
 from PySide2 import QtWidgets, QtCore
 
 from mapclientplugins.convertcoordinatefieldstep.view.ui_convertcoordinatefields import Ui_ConvertCoordinateFieldWidget
@@ -22,12 +24,16 @@ class ConvertCoordinateFieldsView(QtWidgets.QWidget):
         self._make_connections()
 
     def _make_connections(self):
+        self._ui.pushButtonDocumentation.clicked.connect(self._documentationButtonClicked)
         self._ui.pushButtonDone.clicked.connect(self._done_button_clicked)
         self._ui.comboBoxFilterFields.activated.connect(self._filter_field_changed)
 
     def _filter_field_changed(self, current_index):
         current_text = self._ui.comboBoxFilterFields.currentText()
         self._model.set_group_field(current_text)
+
+    def _documentationButtonClicked(self):
+        webbrowser.open("https://abi-mapping-tools.readthedocs.io/en/latest/mapclientplugins.convertcoordinatefieldstep/docs/index.html")
 
     def _done_button_clicked(self):
         QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)

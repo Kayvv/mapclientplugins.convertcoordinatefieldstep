@@ -70,6 +70,13 @@
        </property>
       </spacer>
      </item>
+    <item>
+       <widget class="QPushButton" name="pushButtonDocumentation">
+        <property name="text">
+         <string>Online Documentation</string>
+        </property>
+       </widget>
+      </item>
      <item>
       <widget class="QPushButton" name="pushButtonDone">
        <property name="text">
