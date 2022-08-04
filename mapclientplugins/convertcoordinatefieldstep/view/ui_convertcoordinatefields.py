@@ -59,6 +59,11 @@ class Ui_ConvertCoordinateFieldWidget(object):
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
 
+        self.pushButtonDocumentation = QPushButton(ConvertCoordinateFieldWidget)
+        self.pushButtonDocumentation.setObjectName(u"pushButtonDocumentation")
+
+        self.horizontalLayout.addWidget(self.pushButtonDocumentation)
+
         self.pushButtonDone = QPushButton(ConvertCoordinateFieldWidget)
         self.pushButtonDone.setObjectName(u"pushButtonDone")
 
@@ -77,6 +82,7 @@ class Ui_ConvertCoordinateFieldWidget(object):
         ConvertCoordinateFieldWidget.setWindowTitle(QCoreApplication.translate("ConvertCoordinateFieldWidget", u"Convert Coordinate Field", None))
         self.groupBoxCoordinateFieldsMap.setTitle(QCoreApplication.translate("ConvertCoordinateFieldWidget", u"Convertable Fields:", None))
         self.groupBox.setTitle(QCoreApplication.translate("ConvertCoordinateFieldWidget", u"Filter Fields:", None))
+        self.pushButtonDocumentation.setText(QCoreApplication.translate("ConvertCoordinateFieldWidget", u"Online Documentation", None))
         self.pushButtonDone.setText(QCoreApplication.translate("ConvertCoordinateFieldWidget", u"Done", None))
     # retranslateUi
 
