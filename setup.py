@@ -32,7 +32,7 @@ def readfile(filename, split=False):
 readme = readfile("README.rst", split=True)
 readme.extend(['', 'License', '=======', '', '::', ''])
 source_license = readfile("LICENSE")
-requires = ['PySide2', 'opencmiss.utils', 'opencmiss.zinc']  # Minimal requirements listing. Insert additional dependencies here.
+requires = ['PySide6', 'opencmiss.utils', 'opencmiss.zinc']  # Minimal requirements listing. Insert additional dependencies here.
 
 
 setup(

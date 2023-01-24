@@ -1,6 +1,6 @@
 import webbrowser
 
-from PySide2 import QtWidgets, QtCore
+from PySide6 import QtWidgets, QtCore
 
 from mapclientplugins.convertcoordinatefieldstep.view.ui_convertcoordinatefields import Ui_ConvertCoordinateFieldWidget
 
