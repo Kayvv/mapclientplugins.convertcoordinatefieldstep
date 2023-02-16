@@ -6,28 +6,15 @@ Overview
 The **Convert Coordinate Field** is MAP Client plugin for converting coordinate fields from one coordinate field to another.
 
 
+Specification
+-------------
 
-Workflow Connections
---------------------
+Information on this plugins' specificaiton is available :ref:`here <mcp-convertcoordinatefield-specification>`.
 
-As shown in :numref:`fig-mcp-convert-coordinate-field-configured-step`, the **Convert Coordinate Field** uses 1 input:
+Configuration
+-------------
 
-1. A `Zinc library` compatible EX file from a **File Chooser** or other plugin. (Port: *https://opencmiss.org/1.0/rdf-schema#file_location*)
-
-It produces 1 output which may be piped to other workflow steps:
-
-1. An EX file after convert. (Port: *https://opencmiss.org/1.0/rdf-schema#file_location*)
-
-
-.. _fig-mcp-convert-coordinate-field-configured-step:
-
-.. figure:: _images/workflow-connection.png
-   :alt: Configured step icon
-   :align: center
-   :figwidth: 75%
-
-   **Convert Coordinate Field** workflow connections.
-
+Information on this plugins' configuration is available :ref:`here <mcp-convertcoordinatefield-configuration>`.
 
 Instructions
 ------------
