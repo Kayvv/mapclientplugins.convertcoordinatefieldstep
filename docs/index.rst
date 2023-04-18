@@ -40,13 +40,15 @@ This plugin:
 
 * **uses**:
 
-  * *https://opencmiss.org/1.0/rdf-schema#file_location*
+  * *https://physiomeproject.org/1.0/rdf-schema#file_location*
+      or
+    list-of *http://cmlibs.org/workflow/1.0/rdf-schema#zinc-exf*
 
 and
 
 * **provides**:
 
-  * *https://opencmiss.org/1.0/rdf-schema#file_location*
+  * *https://physiomeproject.org/1.0/rdf-schema#file_location*
 
 The **uses** port is a Zinc exf file location.
 The **provides** port is a Zinc exf file location.
