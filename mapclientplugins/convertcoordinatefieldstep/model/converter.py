@@ -1,9 +1,9 @@
 import json
 
-from opencmiss.utils.zinc.field import find_or_create_field_group
-from opencmiss.zinc.context import Context
-from opencmiss.zinc.field import Field
-from opencmiss.zinc.status import OK as ZINC_OK
+from cmlibs.utils.zinc.field import find_or_create_field_group
+from cmlibs.zinc.context import Context
+from cmlibs.zinc.field import Field
+from cmlibs.zinc.status import OK as ZINC_OK
 
 
 class ConverterFileReadFailed(Exception):

@@ -3,7 +3,7 @@ MAP Client Plugin Step
 """
 import json
 
-from PySide2 import QtCore, QtGui, QtWidgets
+from PySide6 import QtCore, QtGui, QtWidgets
 
 from mapclient.mountpoints.workflowstep import WorkflowStepMountPoint
 from mapclientplugins.convertcoordinatefieldstep.configuredialog import ConfigureDialog
@@ -29,7 +29,7 @@ class ConvertCoordinateFieldStep(WorkflowStepMountPoint):
                        'http://physiomeproject.org/workflow/1.0/rdf-schema#file_location'),
                       ('http://physiomeproject.org/workflow/1.0/rdf-schema#port',
                        'http://physiomeproject.org/workflow/1.0/rdf-schema#uses-list-of',
-                       'http://opencmiss.org/workflow/1.0/rdf-schema#zinc-exf')
+                       'http://cmlibs.org/workflow/1.0/rdf-schema#zinc-exf')
                       ])
         self.addPort(('http://physiomeproject.org/workflow/1.0/rdf-schema#port',
                       'http://physiomeproject.org/workflow/1.0/rdf-schema#provides',
