@@ -85,8 +85,7 @@ class Converter(object):
                 # print(group_field.getSize())
                 node_set = field_module.findNodesetByName("nodes")
                 node_template = node_set.createNodetemplate()
-                node_group = group_field.getFieldNodeGroup(node_set)
-                group = node_group.getNodesetGroup()
+                group = group_field.getNodesetGroup(node_set)
                 data_iter = group.createNodeiterator()
                 data_item = data_iter.next()
                 output_field_module.readDescription(field_module.writeDescription())
@@ -150,8 +149,4 @@ class Converter(object):
 
 def _create_node_group(field_module, node_set, group_field_name):
     field_group = find_or_create_field_group(field_module, group_field_name)
-    node_group_field = field_group.getFieldNodeGroup(node_set)
-    if not node_group_field.isValid():
-        node_group_field = field_group.createFieldNodeGroup(node_set)
-
-    return node_group_field.getNodesetGroup()
+    return field_group.getOrCreateNodesetGroup(node_set)
